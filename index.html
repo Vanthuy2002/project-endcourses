@@ -77,70 +77,22 @@
 
         <section class="recently">
           <h2 class="recently-heading">Recently played</h2>
-          <div class="recently-list">
-            <div class="recently-item">
-              <img src="/src/img/img2.jpg" alt="" class="recently-thumb" />
-              <h2 class="recently-name">My Finest Work Yet</h2>
-              <p class="recently-author">Andrew Bird</p>
-            </div>
-            <div class="recently-item">
-              <img src="/src/img/img1.jpg" alt="" class="recently-thumb" />
-              <h2 class="recently-name">My Finest Work Yet</h2>
-              <p class="recently-author">Andrew Bird</p>
-            </div>
-            <div class="recently-item">
-              <img src="/src/img/img1.jpg" alt="" class="recently-thumb" />
-              <h2 class="recently-name">My Finest Work Yet</h2>
-              <p class="recently-author">Andrew Bird</p>
-            </div>
-            <div class="recently-item">
-              <img src="/src/img/img1.jpg" alt="" class="recently-thumb" />
-              <h2 class="recently-name">My Finest Work Yet</h2>
-              <p class="recently-author">Andrew Bird</p>
-            </div>
-            <div class="recently-item">
-              <img src="/src/img/img1.jpg" alt="" class="recently-thumb" />
-              <h2 class="recently-name">My Finest Work Yet</h2>
-              <p class="recently-author">Andrew Bird</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="suggestion">
-          <h2 class="suggestion-heading">For You of Day</h2>
-          <div class="suggestion-list">
-            <div class="suggestion-item">
-              <img src="/src/img/img2.jpg" alt="" class="suggestion-thumb" />
-              <h2 class="suggestion-name">This is Thumbail</h2>
-              <p class="suggestion-author">Blaz Erzetic</p>
-            </div>
-            <div class="suggestion-item">
-              <img src="/src/img/img2.jpg" alt="" class="suggestion-thumb" />
-              <h2 class="suggestion-name">This is Thumbail</h2>
-              <p class="suggestion-author">Blaz Erzetic</p>
-            </div>
-            <div class="suggestion-item">
-              <img src="/src/img/img2.jpg" alt="" class="suggestion-thumb" />
-              <h2 class="suggestion-name">This is Thumbail</h2>
-              <p class="suggestion-author">Blaz Erzetic</p>
-            </div>
-            <div class="suggestion-item">
-              <img src="/src/img/img2.jpg" alt="" class="suggestion-thumb" />
-              <h2 class="suggestion-name">This is Thumbail</h2>
-              <p class="suggestion-author">Blaz Erzetic</p>
-            </div>
-            <div class="suggestion-item">
-              <img src="/src/img/img2.jpg" alt="" class="suggestion-thumb" />
-              <h2 class="suggestion-name">This is Thumbail</h2>
-              <p class="suggestion-author">Blaz Erzetic</p>
-            </div>
-          </div>
+          <div class="recently-list"></div>
         </section>
       </section>
 
+      <audio src="" id="audio"></audio>
+
       <section class="control">
         <div class="control-time">
-          <input type="range" class="custom" min="0" step="1" />
+          <input
+            type="range"
+            class="custom"
+            id="timeline"
+            value="0"
+            min="0"
+            step="1"
+          />
         </div>
         <div class="control-list">
           <div class="control-info">
@@ -153,26 +105,35 @@
           </div>
 
           <div class="control-play">
-            <span class="control-icon"><i class="fa-solid fa-repeat"></i></span>
-            <span class="control-icon">
+            <span class="control-icon repeat">
+              <i class="fa-solid fa-repeat"></i>
+            </span>
+            <span class="control-icon prev">
               <i class="fa-solid fa-backward-step"></i>
             </span>
             <span class="control-icon">
-              <i class="fa-solid fa-play"></i>
+              <i class="playing fa-solid fa-play fa-pause"></i>
             </span>
-            <span class="control-icon">
+            <span class="control-icon next">
               <i class="fa-solid fa-forward-step"></i>
             </span>
-            <span class="control-icon">
+            <span class="control-icon random">
               <i class="fa-solid fa-shuffle"></i>
             </span>
           </div>
 
           <div class="control-volum">
             <span class="control-icon"
-              ><i class="fa-solid fa-volume-high"></i
+              ><i class="mute fa-solid fa-volume-high"></i
             ></span>
-            <input type="range" min="0" max="100" />
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value=""
+              class="custom-volum"
+            />
+            <span class="volumn-text">0</span>
           </div>
         </div>
       </section>
